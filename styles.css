@@ -1,32 +1,43 @@
-.name{
+.title{
     display: flex;
     position: fixed;
     top: 30%;
     left: 255px;
     color: white;
     font-size: 50px;
+    margin-top: 70px;
 }
 .position{
     display: flex;
     position: fixed;
     top: 40%;
-    left: 300px;
-    color: white;
-    font-size: 50px;
-    margin-top: 20px;
+    left: 340px;
+    color: rgb(0, 251, 255);
+    animation: changeColor 5s linear infinite;
+    font-size: 45px;
+    margin-top: 90px;
 }
+
+@keyframes changeColor {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
 
 .container {
     display: flex;
     flex-direction: column;
     position: fixed;
     top: 35%;
-    right: 250px;
-    gap: 60px;
+    right: 350px;
+    gap: 70px;
   }
 
   button {
-    width: 300px;
+    width: 350px;
     height: 45px;
     font-size: 35px;
     cursor: pointer;
